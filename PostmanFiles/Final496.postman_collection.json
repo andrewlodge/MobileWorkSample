@@ -1,0 +1,218 @@
+{
+	"info": {
+		"name": "Final496",
+		"_postman_id": "66b6c2e9-bd51-0bde-3e73-6da358a49576",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AddClinic",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "645485e3-6890-405f-ae3f-e3eccf230377",
+						"type": "text/javascript",
+						"exec": [
+							"// first, get the response JSON object from the POSTed gist",
+							"var postResponseData = pm.response.json();",
+							"console.log(postResponseData);"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Clinic2\", \"openHour\": 10, \"openMinute\": 0, \"closeHour\": 80, \"closeMinute\": 30, \"lat\": 44.5, \"lon\": -123.2}"
+				},
+				"url": {
+					"raw": "{{url}}/clinic",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"clinic"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "Add Procedure",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"ProcedureC\", \"duration\": 1, \"cost\": 100, \"operator\": \"Nurse1\"}"
+				},
+				"url": {
+					"raw": "{{url}}/procedure",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"procedure"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "AddProcToClinic",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"clinic\": \"aghkZXZ-Tm9uZXITCxIGQ2xpbmljGICAgICAyKMKDA\", \"action\": \"add\", \"procedure\": \"Ultrasound\"}"
+				},
+				"url": {
+					"raw": "{{url}}/clinic",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"clinic"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "ModifyClinic",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": \"ag5zfmZpbmFsLTE5NzYyMHITCxIGQ2xpbmljGICAgID4woQKDA\", \"name\": \"RevAPostmanC\", \"closeHour\": 3}"
+				},
+				"url": {
+					"raw": "{{url}}/clinic",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"clinic"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "ModifyProcedure",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": \"ag5zfmZpbmFsLTE5NzYyMHIWCxIJUHJvY2VkdXJlGICAgIDekIEKDA\", \"name\": \"TestD\", \"duration\": 1.2, \"cost\": 2.2, \"operator\": \"OpD\"}"
+				},
+				"url": {
+					"raw": "{{url}}/procedure",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"procedure"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveClinic",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/clinic/ag5zfmZpbmFsLTE5NzYyMHITCxIGQ2xpbmljGICAgIC8oYIKDA",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"clinic",
+						"ag5zfmZpbmFsLTE5NzYyMHITCxIGQ2xpbmljGICAgIC8oYIKDA"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveProcedure",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/procedure/ag5zfmZpbmFsLTE5NzYyMHIWCxIJUHJvY2VkdXJlGICAgIDa44YKDA",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"procedure",
+						"ag5zfmZpbmFsLTE5NzYyMHIWCxIJUHJvY2VkdXJlGICAgIDa44YKDA"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllClinics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/clinics",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"clinics"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllProcedures",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/procedures",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"procedures"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		}
+	]
+}
