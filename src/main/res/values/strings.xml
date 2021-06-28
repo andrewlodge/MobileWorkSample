@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">497Final</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_all_clinics">AllClinicsActivity</string>
+    <string name="title_activity_all_procedures">AllProceduresActivity</string>
+    <string name="title_activity_add_clinic">AddClinicActivity</string>
+    <string name="title_activity_add_procedure">AddProcedureActivity</string>
+    <string name="title_activity_modify_clinic">ModifyClinicActivity</string>
+    <string name="title_activity_modify_procedure">ModifyProcedureActivity</string>
+    <string name="title_activity_delete_clinic">DeleteClinicActivity</string>
+    <string name="title_activity_delete_procedure">DeleteProcedureActivity</string>
+    <string name="title_activity_modify_clinic_form">ModifyClinicFormActivity</string>
+    <string name="title_activity_modify_procedure_form">ModifyProcedureFormActivity</string>
+    <string name="title_activity_link_procedure">LinkProcedureActivity</string>
+    <string name="title_activity_link_clinic">LinkClinicActivity</string>
+    <string name="title_activity_unlink_clinic">UnlinkClinicActivity</string>
+    <string name="title_activity_unlink_procedure">UnlinkProcedureActivity</string>
+</resources>

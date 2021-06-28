@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lodge.a497final">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AllClinicsActivity"
+            android:label="@string/title_activity_all_clinics"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllProceduresActivity"
+            android:label="@string/title_activity_all_procedures"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddClinicActivity"
+            android:label="@string/title_activity_add_clinic"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddProcedureActivity"
+            android:label="@string/title_activity_add_procedure"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ModifyClinicActivity"
+            android:label="@string/title_activity_modify_clinic"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ModifyProcedureActivity"
+            android:label="@string/title_activity_modify_procedure"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DeleteClinicActivity"
+            android:label="@string/title_activity_delete_clinic"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DeleteProcedureActivity"
+            android:label="@string/title_activity_delete_procedure"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ModifyClinicFormActivity"
+            android:label="@string/title_activity_modify_clinic_form"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ModifyProcedureFormActivity"
+            android:label="@string/title_activity_modify_procedure_form"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LinkProcedureActivity"
+            android:label="@string/title_activity_link_procedure"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LinkClinicActivity"
+            android:label="@string/title_activity_link_clinic"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UnlinkClinicActivity"
+            android:label="@string/title_activity_unlink_clinic"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UnlinkProcedureActivity"
+            android:label="@string/title_activity_unlink_procedure"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

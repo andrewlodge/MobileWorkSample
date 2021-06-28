@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:rowCount="5"
+    android:columnCount="2">
+
+    <TextView
+        android:text="Display All Clinics"
+        android:id="@+id/display_clinics"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorTextPrimaryLight"
+        android:textSize="16dip"/>
+
+    <TextView
+        android:text="Add Clinic"
+        android:id="@+id/add_clinic"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorTextPrimaryLight"
+        android:textSize="16dip"/>
+
+    <TextView
+        android:text="Modify Clinic"
+        android:id="@+id/modify_clinic"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorTextPrimaryLight"
+        android:textSize="16dip"/>
+
+    <TextView
+        android:text="Delete Clinic"
+        android:id="@+id/delete_clinic"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorTextPrimaryLight"
+        android:textSize="16dip"/>
+
+    <TextView
+        android:text="Display All Procedures"
+        android:id="@+id/display_procedures"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorTextPrimaryLight"
+        android:textSize="16dip"/>
+
+    <TextView
+        android:text="Add Procedure"
+        android:id="@+id/add_procedure"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorTextPrimaryLight"
+        android:textSize="16dip"/>
+
+    <TextView
+        android:text="Modify Procedure"
+        android:id="@+id/modify_procedure"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorTextPrimaryLight"
+        android:textSize="16dip"/>
+
+    <TextView
+        android:text="Delete Procedure"
+        android:id="@+id/delete_procedure"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorTextPrimaryLight"
+        android:textSize="16dip"/>
+
+    <TextView
+        android:text="Link a Procedure"
+        android:id="@+id/link_procedure"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorTextPrimaryLight"
+        android:textSize="16dip"/>
+
+    <TextView
+        android:text="Unlink a Procedure"
+        android:id="@+id/unlink_procedure"
+        android:layout_row="4"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorTextPrimaryLight"
+        android:textSize="16dip"/>
+
+</GridLayout>
+
+
+
